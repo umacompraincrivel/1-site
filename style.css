@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding:  0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+    max-width: 980px;
+    margin: 50px auto;
+
+    
+    
+    
+    
+}
+
+header {
+    margin-top: 85px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%;
+    
+}
+
+.search-bar {
+    background-color: #f5a623;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #f5a623;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 5px;
+    background-color: #f5f8fd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:  0;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    width: 185px;
+    
+}
+
+.product img {
+    max-width: 100%;
+
+}
+
+.product h2 {
+    font-size: 12px;
+    margin: 10px 0;
+    display: none;
+}
+
+.product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.product span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.product:hover::after {
+    content: "Encontrar item";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF5722;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.product:hover {
+    border: 1px solid #FF5722;
+    position: relative;
+}
+.search-bar {
+    position: relative;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #myBtn { /*topo*/
+    display: none; /* Oculte o botão por padrão */
+    position: fixed; /* Fixe o botão na parte inferior direita da tela */
+    bottom: 60px;
+    right: 30px;
+    z-index: 99; /* Coloque o botão acima de outros elementos */
+    border: none; /* Remova a borda do botão */
+    outline: none; /* Remova o contorno do botão */
+    background-color: #555; /* Defina a cor de fundo do botão */
+    color: white; /* Defina a cor do texto do botão */
+    cursor: pointer; /* Defina o cursor do mouse como ponteiro */
+    padding: 15px; /* Adicione preenchimento ao botão */
+    border-radius: 10px; /* Adicione bordas arredondadas ao botão */
+    font-size: 18px; /* Defina o tamanho da fonte do botão */
+  }
+  
+  #myBtn:hover {
+    background-color: black; /* Mude a cor de fundo do botão quando o mouse passar por cima */
+  }
+
+          /* Estilo da barra */
+          .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            color: #fff;
+            font-size: 18px;
+        
+        }
+
+        /* Estilo dos links */
+        .bottom-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            
+        }
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+          }
+          
+          .mySlides {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          
+          .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+          /* Fading animation */
+          .fade {
+            animation-name: fade;
+            animation-duration: 1s;
+          }
+          
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+  
+          .search-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            /* outros estilos que você queira aplicar */
+          }
+
+       
