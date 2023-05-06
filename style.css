@@ -221,4 +221,7 @@ main {
             /* outros estilos que você queira aplicar */
           }
 
-       
+       .footer {
+        margin: 30px;
+
+       }
